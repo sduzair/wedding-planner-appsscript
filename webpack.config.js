@@ -67,7 +67,12 @@ module.exports = {
           options: {
             cacheDirectory: true,
             cacheCompression: false,
-            plugins: [['@babel/plugin-proposal-object-rest-spread', { loose: true, useBuiltIns: true }]],
+            plugins: [
+              [
+                '@babel/plugin-proposal-object-rest-spread',
+                { loose: true, useBuiltIns: true },
+              ],
+            ],
           },
         },
       },

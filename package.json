@@ -10,7 +10,7 @@
     "build": "webpack",
     "format": "prettier --write dist/code.js",
     "postbuild": "npm run format",
-    "upload": "npx clasp push",
+    "upload": "npm run build && npx clasp push -f",
     "deploy": "npm run build && npm run upload",
     "test": "jest"
   },
@@ -50,7 +50,6 @@
     "gas-webpack-plugin": "^2.5.0",
     "jest": "^29.7.0",
     "npm-watch": "^0.11.0",
-    "prettier": "^3.2.4",
     "terser-webpack-plugin": "^5.3.10",
     "webpack": "^5.90.0",
     "webpack-cli": "^5.1.4"

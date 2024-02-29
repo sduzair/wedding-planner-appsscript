@@ -33,6 +33,8 @@
     "prettier/prettier": [
       "error",
       {
+        "tabWidth": 2,
+        "useTabs": false,
         "trailingComma": "es5",
         "singleQuote": true,
         "printWidth": 120,
@@ -48,6 +50,7 @@
         "argsIgnorePattern": "res|next|^err|^ignore|^_",
         "caughtErrors": "none"
       }
-    ]
+    ],
+    "no-console": "off"
   }
 }
