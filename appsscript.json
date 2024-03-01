@@ -1,5 +1,5 @@
 {
-  "timeZone": "Asia/Calcutta",
+  "timeZone": "America/Toronto",
   "runtimeVersion": "V8",
   "dependencies": {
     "enabledAdvancedServices": [
@@ -39,6 +39,8 @@
     "https://www.googleapis.com/auth/script.scriptapp",
     "https://www.googleapis.com/auth/script.send_mail",
     "https://www.googleapis.com/auth/spreadsheets",
-    "https://www.googleapis.com/auth/script.container.ui"
+    "https://www.googleapis.com/auth/script.container.ui",
+    "https://www.googleapis.com/auth/calendar",
+    "https://www.google.com/calendar/feeds"
   ]
 }
