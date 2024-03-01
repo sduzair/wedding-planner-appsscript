@@ -14,7 +14,9 @@ export class SheetRow {
     this.date = date;
     this.iD = iD;
     this.cardId = cardId;
-    this.cardStart = cardStart ? new Date(cardStart) : undefined;
+    this.cardStart = cardStart
+      ? new Date(cardStart)
+      : undefined;
     this.cardDue = cardDue ? new Date(cardDue) : undefined;
     this.cardShortUrl = cardShortUrl;
     this.cardName = cardName;

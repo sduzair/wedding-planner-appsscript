@@ -32,7 +32,7 @@ module.exports = {
     extensions: ['.js'],
   },
   optimization: {
-    minimize: true,
+    minimize: false,
     minimizer: [
       new TerserPlugin({
         test: /\.js$/i,
@@ -99,7 +99,9 @@ module.exports = {
           info: { minimized: true },
         },
         {
-          from: getSrcPath('../node_modules/apps-script-oauth2/dist/OAuth2.gs'),
+          from: getSrcPath(
+            '../node_modules/apps-script-oauth2/dist/OAuth2.gs'
+          ),
           to: 'OAuth2.js',
         },
       ],
